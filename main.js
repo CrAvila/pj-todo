@@ -20,3 +20,30 @@
 
     toDos.splice(0, 1);
 
+// V2 requirements 
+        //It should have a function to display toDos
+
+        function displayTodos() {
+            console.log(`My ToDos: ${toDos}`);
+        };
+
+        // It should have a function to add toDos
+
+        function addTodos(newTodo){
+            toDos.push(newTodo);
+            displayTodos();
+        };
+
+        //It should have a function to change toDos
+
+        function changeTodos(position, newValue){
+            toDos[position] = newValue;
+            displayTodos();
+        };
+        // It should have a function to delete toDos
+
+        function deleteTodos(position){
+            toDos.splice(position, 1);
+            displayTodos();
+        };
+
